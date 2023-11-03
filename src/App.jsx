@@ -2,7 +2,8 @@ import { useState } from 'react'
 
 import NavBar from './components/Navbar/NavBar'
 import ItemListContainer from './components/ItemListContainer/ItemListContainer'
-import CardItem from './components/CardItem/CardItem'
+
+import ContainerCardItem from './components/CardItem/ContainerCardItem'
 
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css'
@@ -16,10 +17,10 @@ function App() {
      <NavBar/>
      <ItemListContainer greeting='Saludos desde el Home, Bienvenidos!'/>
      <div className='card-container'>
-     <CardItem></CardItem>
-     <CardItem></CardItem>
-     <CardItem></CardItem>
-     <CardItem></CardItem>
+      <ContainerCardItem></ContainerCardItem>
+      <ContainerCardItem></ContainerCardItem>
+      <ContainerCardItem></ContainerCardItem>
+      <ContainerCardItem></ContainerCardItem>
      </div>
     </>
   )
