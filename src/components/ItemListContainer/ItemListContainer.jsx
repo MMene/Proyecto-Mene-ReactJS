@@ -4,4 +4,4 @@ const ItemListContainer = ({greeting = 'saludando por defecto'}) => {
   )
 }
 
-export default ItemListContainer
+export default ItemListContainer;

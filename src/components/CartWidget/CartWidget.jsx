@@ -1,10 +1,9 @@
-import imagen from '../../assets/react.svg'
+import imagen from '../../assets/image/shopping-cart.svg'
 
 const CartWidget = () => {
   return (
     <div>
        <img src={imagen} alt="" />
-       21 🛒
     </div>
   )
 }
