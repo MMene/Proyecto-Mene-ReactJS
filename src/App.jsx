@@ -1,26 +1,21 @@
-import { useState } from 'react';
-
 import NavBar from './components/Navbar/NavBar';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
-
 import ContainerCardItem from './components/CardItem/ContainerCardItem';
-
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-     <NavBar/>
-     <ItemListContainer greeting='Saludos desde el Home, Bienvenidos!'/>
-     <div className='card-container'>
-      <ContainerCardItem></ContainerCardItem>
-     </div>
-    </>
-  )
+      <BrowserRouter>
+        <NavBar/>
+        <Routes>
+          <Route>
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    )
 }
 
 export default App

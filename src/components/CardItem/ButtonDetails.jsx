@@ -1,8 +1,6 @@
-import Button from "react-bootstrap/esm/Button";
-
 const ButtonDetails = () => {
     return (
-        <Button id="detalles">Ver Detalles</Button>
+        <button id = "detalles">Ver Detalles</button>
     )
 }
 

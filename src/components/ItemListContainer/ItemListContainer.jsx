@@ -1,6 +1,6 @@
 const ItemListContainer = ({greeting = 'saludando por defecto'}) => {
   return (
-    <div>{greeting}</div>
+    <div className="greeting">{greeting}</div>
   )
 }
 
