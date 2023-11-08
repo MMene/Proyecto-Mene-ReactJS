@@ -6,11 +6,11 @@ const Description = (props) => {
             
             <div className="description"> 
              <span className="descriptionTitle">Descripcion:</span>
-             <p className="parrafo">{props.parrafo}</p>
+             <p className="parrafo">{props.description}</p>
             </div>
         
             <span className="cant">
-                Cantidad: {props.cantidad}
+                Cantidad: {props.cant}
             </span>
             
             <span className="price">
