@@ -1,4 +1,4 @@
-const ItemListContainer = ({greeting = 'saludando por defecto'}) => {
+const ItemListContainer = ({greeting = 'BIENVENIDOS'}) => {
   return (
     <div className="greeting">{greeting}</div>
   )

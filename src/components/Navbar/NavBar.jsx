@@ -2,7 +2,9 @@ import CartWidget from "../CartWidget/CartWidget"
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
+import { Link, NavLink } from "react-router-dom";
+import ItemListContainer from "../ItemListContainer/ItemListContainer";
+
 
 function NavBar (){
     return (
@@ -13,19 +15,12 @@ function NavBar (){
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#features">Quienes Somos</Nav.Link>
-            <Nav.Link href="#pricing">Contacto</Nav.Link>
-            <NavDropdown title="Productos" id="collapsible-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Accesorios</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Verano</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item>
-            </NavDropdown>
+            <NavLink className={({isActive}) => isActive ? 'btn btn-primary' : 'btn' } to="/">Inicio</NavLink>
+            <NavLink className={({isActive}) => isActive ? 'btn btn-primary' : 'btn' } to="/category/remera">Remeras</NavLink>
+            <NavLink className={({isActive}) => isActive ? 'btn btn-primary' : 'btn' } to="/category/camperas">Camperas</NavLink>
+            <NavLink className={({isActive}) => isActive ? 'btn btn-primary' : 'btn' } to="/category/medias">Medias</NavLink>
+            <NavLink className={({isActive}) => isActive ? 'btn btn-primary' : 'btn' } to="/category/shorts">Shorts</NavLink>
+            <NavLink className={({isActive}) => isActive ? 'btn btn-primary' : 'btn' } to="/category/pantalones">Pantalones</NavLink>
           </Nav>
           <Nav>
             <CartWidget />
@@ -37,4 +32,4 @@ function NavBar (){
     )
 }
 
-export default NavBar
+export default NavBar;
