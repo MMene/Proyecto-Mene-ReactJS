@@ -4,6 +4,10 @@
 
 El siguiente proyecto es una aplicación web hecha con React JS para mi proyecto de ReactJS en Coderhouse. Se trata de un eCommerce para una una tienda de videojuegos ficticia. 
 
+# DEMO
+
+https://iridescent-medovik-9b643e.netlify.app/
+
 ## Dependencias 
 
 Si bien todas las dependencias se instalan con el comando `npm install` a continuación las detallaré para que sean tomadas en cuenta:
